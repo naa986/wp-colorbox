@@ -12,11 +12,12 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 
 == Description ==
 
-[WP Colorbox](https://noorsplugin.com/wordpress-colorbox-plugin/) plugin is a simple lightbox tool for WordPress. It allows users to pop up content in lightbox using the popular jQuery ColorBox library. They can also view the larger version of a particular media file without leaving the page.
+[WordPress Colorbox](https://noorsplugin.com/wordpress-colorbox-plugin/) plugin is a simple lightbox tool for WordPress. It allows users to pop up content in lightbox using the popular jQuery ColorBox library. They can also view the larger version of a particular media file without leaving the page.
 
 = Requirements =
 
 * Latest version of WordPress
+* A self-hosted website running on [WordPress hosting](https://noorsplugin.com/best-cheap-wordpress-hosting/)
 
 = Feature =
 

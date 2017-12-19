@@ -2,9 +2,9 @@
 /*
 Plugin Name: WP Colorbox
 Version: 1.1.2
-Plugin URI: http://noorsplugin.com/2014/01/11/wordpress-colorbox-plugin/
+Plugin URI: https://noorsplugin.com/wordpress-colorbox-plugin/
 Author: naa986
-Author URI: http://noorsplugin.com/
+Author URI: https://noorsplugin.com/
 Description: Colorbox Lightbox to pop up media files from your WordPress site
 Text Domain: wp-colorbox
 Domain Path: /languages
