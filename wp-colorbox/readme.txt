@@ -25,7 +25,7 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 * Flexiblity of creating your own lightbox link
 * Pop up custom/HTML content in lightbox
 * Trigger lightbox from either a text/image link
-* Comptaiblie with WordPress multisite
+* Compatible with WordPress multisite
 * Add lightbox to a YouTube or Vimeo video link
 * Enable lightbox functionality on your site which supports all major browsers
 * Use a simple shortcode anywhere on your site (Post, Page, Homepage etc.)to pop up a media file in lightbox
