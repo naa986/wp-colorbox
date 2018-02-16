@@ -35,6 +35,8 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 
 = WP Colorbox Plugin Usage =
 
+https://www.youtube.com/watch?v=2osxJcPTS1E&rel=0
+
 **Pop up image in lightbox**
 
 Create a new post/page and use the following shortcode to create a text/image link which will trigger lightbox once clicked:
