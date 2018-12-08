@@ -3,7 +3,7 @@ Contributors: naa986
 Donate link: https://noorsplugin.com/
 Tags: colorbox, lightbox, image, youtube, vimeo, overlay, images, gallery, video, videos, photo, photos, picture, javascript, jquery, media, links, modal, template, theme, Style, photography, lightview 
 Requires at least: 3.0
-Tested up to: 4.9
+Tested up to: 5.0
 Stable tag: 1.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
