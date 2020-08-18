@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Colorbox
-Version: 1.1.2
+Version: 1.1.3
 Plugin URI: https://noorsplugin.com/wordpress-colorbox-plugin/
 Author: naa986
 Author URI: https://noorsplugin.com/
@@ -15,7 +15,7 @@ if(!class_exists('WP_COLORBOX'))
 {
     class WP_COLORBOX
     {
-        var $plugin_version = '1.1.2';
+        var $plugin_version = '1.1.3';
         var $plugin_url;
         var $plugin_path;
         function __construct()
@@ -101,56 +101,59 @@ if(!class_exists('WP_COLORBOX'))
 
 function wp_colorbox_media_handler($atts)
 {
-    extract(shortcode_atts(array(
+    $atts = shortcode_atts(array(
         'url' => '',
         'title' => '',
         'type' => '',
         'hyperlink' => 'Click Here',
         'alt' => '',
         'class' => '',
-    ), $atts));
-    if(empty($url)){
+    ), $atts);
+    $atts = array_map('sanitize_text_field', $atts);
+    if(empty($atts['url'])){
         return __('Please specify the URL of your media file that you wish to pop up in lightbox', 'wp-colorbox');
     }
-    if(empty($type)){
+    if(empty($atts['type'])){
         return __('Please specify the type of media file you wish to pop up in lightbox', 'wp-colorbox');
     }
+    $hyperlink = $atts['hyperlink'];
     if (strpos($hyperlink, 'http') !== false)
     {
-        if(isset($alt) && !empty($alt)){
-            $alt = ' alt="'.$alt.'"';
+        $alt = '';
+        if(isset($atts['alt']) && !empty($atts['alt'])){
+            $alt = ' alt="'.$atts['alt'].'"';
         }
         $hyperlink = '<img src="'.$hyperlink.'"'.$alt.'>';
     }
     $popup_class = "";
-    if($type=="image"){
+    if($atts['type']=="image"){
         $popup_class = "wp-colorbox-image";
     }
-    if($type=="youtube"){
+    else if($atts['type']=="youtube"){
         $popup_class = "wp-colorbox-youtube";
     }
-    if($type=="vimeo"){
+    else if($atts['type']=="vimeo"){
         $popup_class = "wp-colorbox-vimeo";
     }
-    if($type=="iframe"){
+    else if($atts['type']=="iframe"){
         $popup_class = "wp-colorbox-iframe";
     }
-    if($type=="inline"){
+    else if($atts['type']=="inline"){
         $popup_class = "wp-colorbox-inline";
     }
-    //
-    if(!empty($class)){
-        $class = $popup_class." ".$class;
-    }
     else{
-        $class = $popup_class;
+        return __('Please specify a valid type of media file you wish to pop up in lightbox', 'wp-colorbox');
     }
-    //
-    if(!empty($title)){
-        $title = ' title="'.$title.'"';
+    $class = $popup_class;
+    if(!empty($atts['class'])){
+        $class = $class." ".$atts['class'];
+    }
+    $title = '';
+    if(!empty($atts['title'])){
+        $title = ' title="'.$atts['title'].'"';
     }
     $output = <<<EOT
-    <a class="$class" href="$url"{$title}>$hyperlink</a>
+    <a class="$class" href="{$atts['url']}"{$title}>$hyperlink</a>
 EOT;
     return $output;
 }

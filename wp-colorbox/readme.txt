@@ -1,10 +1,10 @@
 === WordPress Colorbox Lightbox ===
 Contributors: naa986
 Donate link: https://noorsplugin.com/
-Tags: colorbox, gallery, images, lightbox, photos,
+Tags: colorbox, gallery, images, lightbox, photos
 Requires at least: 3.0
 Tested up to: 5.5
-Stable tag: 1.1.2
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -128,6 +128,9 @@ Yes.
 none
 
 == Changelog ==
+
+= 1.1.3 =
+* Made some security related improvements in the plugin.
 
 = 1.1.2 =
 * Updated Colorbox to the latest version (1.6.4).
