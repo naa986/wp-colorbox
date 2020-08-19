@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Colorbox
-Version: 1.1.3
+Version: 1.1.4
 Plugin URI: https://noorsplugin.com/wordpress-colorbox-plugin/
 Author: naa986
 Author URI: https://noorsplugin.com/
@@ -15,7 +15,7 @@ if(!class_exists('WP_COLORBOX'))
 {
     class WP_COLORBOX
     {
-        var $plugin_version = '1.1.3';
+        var $plugin_version = '1.1.4';
         var $plugin_url;
         var $plugin_path;
         function __construct()
