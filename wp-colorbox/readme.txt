@@ -3,7 +3,7 @@ Contributors: naa986
 Donate link: https://noorsplugin.com/
 Tags: colorbox, gallery, images, lightbox, photos
 Requires at least: 3.0
-Tested up to: 5.5
+Tested up to: 5.6
 Stable tag: 1.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,7 +33,7 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 * Open external page in lightbox using iframe
 * Responsive lightbox popup which works on mobile devices. Also it fits perfectly on smaller screens.
 
-= WP Colorbox Plugin Usage =
+= How to Use WP Colorbox =
 
 https://www.youtube.com/watch?v=2osxJcPTS1E&rel=0
 
@@ -116,6 +116,14 @@ Yes.
 = Is this plugin compatible with desktop, tablet and mobile devices? =
 
 Yes.
+
+= Does this plugin use jquery colorbox? =
+
+Yes.
+
+= Does this plugin use colorbox cdn? =
+
+No.
 
 == Screenshots ==
 
