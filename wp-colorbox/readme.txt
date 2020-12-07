@@ -1,7 +1,7 @@
 === WordPress Colorbox Lightbox ===
 Contributors: naa986
 Donate link: https://noorsplugin.com/
-Tags: colorbox, gallery, images, lightbox, photos
+Tags: colorbox, gallery, image, photo, lightbox
 Requires at least: 3.0
 Tested up to: 5.6
 Stable tag: 1.1.4
