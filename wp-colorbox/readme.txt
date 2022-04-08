@@ -4,7 +4,7 @@ Donate link: https://noorsplugin.com/
 Tags: colorbox, gallery, image, photo, lightbox
 Requires at least: 3.0
 Tested up to: 5.9
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,12 +14,7 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 
 [WordPress Colorbox](https://noorsplugin.com/wordpress-colorbox-plugin/) plugin is a simple lightbox tool for WordPress. It allows users to pop up content in lightbox using the popular jQuery ColorBox library. They can also view the larger version of a particular media file without leaving the page.
 
-= Requirements =
-
-* Latest version of WordPress
-* A self-hosted website running on [WordPress hosting](https://noorsplugin.com/how-to-choose-the-right-wordpress-hosting/)
-
-= Feature =
+= Features =
 
 * Beautiful lightbox popup style
 * Flexiblity of creating your own lightbox link
@@ -136,6 +131,9 @@ No.
 none
 
 == Changelog ==
+
+= 1.1.5 =
+* Made some security related improvements in the plugin.
 
 = 1.1.4 =
 * Removed some unused files.

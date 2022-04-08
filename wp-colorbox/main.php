@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Colorbox
-Version: 1.1.4
+Version: 1.1.5
 Plugin URI: https://noorsplugin.com/wordpress-colorbox-plugin/
 Author: naa986
 Author URI: https://noorsplugin.com/
@@ -15,7 +15,7 @@ if(!class_exists('WP_COLORBOX'))
 {
     class WP_COLORBOX
     {
-        var $plugin_version = '1.1.4';
+        var $plugin_version = '1.1.5';
         var $plugin_url;
         var $plugin_path;
         function __construct()
@@ -116,14 +116,14 @@ function wp_colorbox_media_handler($atts)
     if(empty($atts['type'])){
         return __('Please specify the type of media file you wish to pop up in lightbox', 'wp-colorbox');
     }
-    $hyperlink = $atts['hyperlink'];
+    $hyperlink = esc_html($atts['hyperlink']);
     if (strpos($hyperlink, 'http') !== false)
     {
         $alt = '';
         if(isset($atts['alt']) && !empty($atts['alt'])){
-            $alt = ' alt="'.$atts['alt'].'"';
+            $alt = ' alt="'.esc_attr($atts['alt']).'"';
         }
-        $hyperlink = '<img src="'.$hyperlink.'"'.$alt.'>';
+        $hyperlink = '<img src="'.esc_url($hyperlink).'"'.$alt.'>';
     }
     $popup_class = "";
     if($atts['type']=="image"){
@@ -150,10 +150,9 @@ function wp_colorbox_media_handler($atts)
     }
     $title = '';
     if(!empty($atts['title'])){
-        $title = ' title="'.$atts['title'].'"';
+        $title = ' title="'.esc_attr($atts['title']).'"';
     }
-    $output = <<<EOT
-    <a class="$class" href="{$atts['url']}"{$title}>$hyperlink</a>
-EOT;
+    $output = '<a class="'.esc_attr($class).'" href="'.esc_url($atts['url']).'"'.$title.'>'.$hyperlink.'</a>';
+
     return $output;
 }
