@@ -14,6 +14,8 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 
 [WP Colorbox](https://noorsplugin.com/wordpress-colorbox-plugin/) plugin is a simple lightbox tool for WordPress. It allows users to pop up content in lightbox using the popular jQuery ColorBox library. They can also view the larger version of a particular media file without leaving the page.
 
+https://www.youtube.com/watch?v=2osxJcPTS1E&rel=0
+
 = Features =
 
 * Beautiful lightbox popup style
@@ -28,8 +30,6 @@ View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbo
 * Responsive lightbox popup which works on mobile devices. Also it fits perfectly on smaller screens.
 
 = How to Use WP Colorbox =
-
-https://www.youtube.com/watch?v=2osxJcPTS1E&rel=0
 
 **Pop up image in lightbox**
 
