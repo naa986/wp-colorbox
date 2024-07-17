@@ -3,10 +3,10 @@ Contributors: naa986
 Donate link: https://noorsplugin.com/
 Tags: colorbox, gallery, image, photo, lightbox
 Requires at least: 3.0
-Tested up to: 6.5
+Tested up to: 6.6
 Stable tag: 1.1.5
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 View image, video (YouTube, Vimeo), page, inline HTML, custom content in lightbox. Add jQuery Colorbox lightbox effect to your WordPress site.
 
