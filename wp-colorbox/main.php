@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Colorbox
-Version: 1.1.5
+Version: 1.1.6
 Plugin URI: https://noorsplugin.com/wordpress-colorbox-plugin/
 Author: naa986
 Author URI: https://noorsplugin.com/
@@ -15,7 +15,7 @@ if(!class_exists('WP_COLORBOX'))
 {
     class WP_COLORBOX
     {
-        var $plugin_version = '1.1.5';
+        var $plugin_version = '1.1.6';
         var $plugin_url;
         var $plugin_path;
         function __construct()
@@ -103,7 +103,6 @@ function wp_colorbox_media_handler($atts)
 {
     $atts = shortcode_atts(array(
         'url' => '',
-        'title' => '',
         'type' => '',
         'hyperlink' => 'Click Here',
         'alt' => '',
@@ -148,11 +147,7 @@ function wp_colorbox_media_handler($atts)
     if(!empty($atts['class'])){
         $class = $class." ".$atts['class'];
     }
-    $title = '';
-    if(!empty($atts['title'])){
-        $title = ' title="'.esc_attr($atts['title']).'"';
-    }
-    $output = '<a class="'.esc_attr($class).'" href="'.esc_url($atts['url']).'"'.$title.'>'.$hyperlink.'</a>';
+    $output = '<a class="'.esc_attr($class).'" href="'.esc_url($atts['url']).'">'.$hyperlink.'</a>';
 
     return $output;
 }

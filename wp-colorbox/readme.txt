@@ -3,8 +3,8 @@ Contributors: naa986
 Donate link: https://noorsplugin.com/
 Tags: colorbox, gallery, image, photo, lightbox
 Requires at least: 3.0
-Tested up to: 6.7
-Stable tag: 1.1.5
+Tested up to: 6.8
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,10 +48,6 @@ here, url is the link to the media file that you wish to open in lightbox and hy
 **Pop up Vimeo video in lightbox**
 
 `[wp_colorbox_media url="https://www.youtube.com/embed/1284237" type="vimeo" hyperlink="click here to pop up vimeo video"]`
-
-**Show Title in lightbox**
-
-`[wp_colorbox_media url="https://example.com/wp-content/uploads/images/overlay.jpg" title="overlay image" type="image" hyperlink="click here to pop up image"]`
 
 **Specify an Alternate Text for an Image**
 
@@ -117,6 +113,9 @@ Yes.
 none
 
 == Changelog ==
+
+= 1.1.6 =
+* Removed title option.
 
 = 1.1.5 =
 * Made some security related improvements in the plugin.
